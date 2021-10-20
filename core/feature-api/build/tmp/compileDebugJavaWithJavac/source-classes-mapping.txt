@@ -1,0 +1,2 @@
+com/example/core/feature_api/BuildConfig.java
+ com.example.core.feature_api.BuildConfig

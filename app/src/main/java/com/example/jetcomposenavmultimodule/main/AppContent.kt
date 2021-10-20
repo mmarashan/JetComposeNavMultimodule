@@ -19,7 +19,6 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.jetcomposenavmultimodule.ui.theme.JetComposeNavMultimoduleTheme
-import com.example.jetcomposenavmultimodule.ui.theme.Purple200
 import com.example.jetcomposenavmultimodule.ui.theme.backgroundWhite
 import com.google.accompanist.insets.ProvideWindowInsets
 import com.google.accompanist.insets.navigationBarsHeight

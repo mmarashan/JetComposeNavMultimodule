@@ -2,6 +2,7 @@ package com.example.jetcomposenavmultimodule.main
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import com.example.core.dependencyprovider.DependencyProvider
 import com.example.jetcomposenavmultimodule.R
 
 enum class BottomTabs(
@@ -12,6 +13,14 @@ enum class BottomTabs(
     val route: String
 ) {
 
-    HOME(R.string.home, R.drawable.ic_baseline_home, "home"),
-    SETTINGS(R.string.settings, R.drawable.ic_baseline_settings, "settings")
+    HOME(
+        R.string.home,
+        R.drawable.ic_baseline_home,
+        DependencyProvider.homeFeature().homeRoute()
+    ),
+    SETTINGS(
+        R.string.settings,
+        R.drawable.ic_baseline_settings,
+        DependencyProvider.settingsFeature().settingsRoute()
+    )
 }

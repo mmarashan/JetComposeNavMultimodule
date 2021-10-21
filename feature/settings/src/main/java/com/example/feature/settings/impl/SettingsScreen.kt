@@ -8,7 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-internal fun SettingsScreen(modifier: Modifier) {
+fun SettingsScreen(modifier: Modifier) {
     Box(modifier = modifier) {
         Text("Settings", modifier = Modifier.padding(36.dp))
     }

@@ -8,8 +8,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-internal fun HomeScreen(modifier: Modifier) {
+fun HomeScreen(modifier: Modifier) {
     Box(modifier = modifier) {
-        Text("Settings", modifier = Modifier.padding(36.dp))
+        Text("Home", modifier = Modifier.padding(36.dp))
     }
 }

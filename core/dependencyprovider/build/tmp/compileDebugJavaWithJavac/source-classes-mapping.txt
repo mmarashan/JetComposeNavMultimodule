@@ -1,0 +1,2 @@
+com/example/core/dependencyprovider/BuildConfig.java
+ com.example.core.dependencyprovider.BuildConfig

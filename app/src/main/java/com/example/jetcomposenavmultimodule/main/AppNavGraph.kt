@@ -1,12 +1,11 @@
 package com.example.jetcomposenavmultimodule.main
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
+import com.example.core.dependencyprovider.DependencyProvider
+import com.example.core.feature_api.register
 
 
 @Composable
@@ -16,19 +15,18 @@ fun AppNavGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = "home"
+        startDestination = DependencyProvider.homeFeature().homeRoute()
     ) {
+        register(
+            DependencyProvider.homeFeature(),
+            navController = navController,
+            modifier = modifier
+        )
 
-        composable("home") {
-            Box(modifier = modifier) {
-                Text("home")
-            }
-        }
-
-        composable("settings") {
-            Box(modifier = modifier) {
-                Text("settings")
-            }
-        }
+        register(
+            DependencyProvider.settingsFeature(),
+            navController = navController,
+            modifier = modifier
+        )
     }
 }

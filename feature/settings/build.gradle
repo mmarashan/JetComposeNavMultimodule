@@ -12,6 +12,18 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+        useIR = true
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerVersion '1.5.21'
+    }
 }
 
 dependencies {

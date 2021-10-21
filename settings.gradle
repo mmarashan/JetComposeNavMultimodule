@@ -13,4 +13,5 @@ include ':app',
 
         ':feature',
         ':feature:home',
-        ':feature:settings'
+        ':feature:settings',
+        ':feature:onboarding'

@@ -8,6 +8,7 @@ dependencyResolutionManagement {
 rootProject.name = "JetComposeNavMultimodule"
 include ':app',
         ':core',
-        ':feature'
-
-include ':core:feature-api'
+        ':core:feature-api',
+        ':feature',
+        ':feature:home',
+        ':feature:settings'

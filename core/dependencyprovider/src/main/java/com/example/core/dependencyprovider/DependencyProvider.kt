@@ -14,4 +14,6 @@ object DependencyProvider {
     fun homeFeature(): HomeFeatureApi = HomeFeatureImpl()
 
     fun settingsFeature(): SettingsFeatureApi = SettingsFeatureImpl()
+
+    fun onboardingFeature(): SettingsFeatureApi = SettingsFeatureImpl()
 }

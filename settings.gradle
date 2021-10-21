@@ -9,6 +9,8 @@ rootProject.name = "JetComposeNavMultimodule"
 include ':app',
         ':core',
         ':core:feature-api',
+        ':core:dependencyprovider',
+
         ':feature',
         ':feature:home',
         ':feature:settings'

@@ -20,7 +20,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
 
-    implementation project(":feature:home")
-    implementation project(":feature:settings")
-    implementation project(":feature:onboarding")
+    implementation project(':feature:home-api')
+    implementation project(':feature:home-impl')
+    implementation project(':feature:settings-api')
+    implementation project(':feature:settings-impl')
 }

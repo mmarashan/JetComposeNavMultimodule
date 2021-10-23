@@ -4,29 +4,20 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavHostController
 
 @Composable
-fun HomeScreen(modifier: Modifier, navController: NavHostController) {
+fun HomeDetailsScreen(modifier: Modifier, parameter: String) {
     Column(
         modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        Text("Home", modifier = Modifier.padding(36.dp))
-
-        Button(
-            modifier = Modifier.padding(16.dp),
-            onClick = {
-                navController.navigate("home/abc")
-            }) {
-            Text("To details screen")
-        }
+        Text("Home details", modifier = Modifier.padding(36.dp))
+        Text("Parameter = $parameter", modifier = Modifier.padding(16.dp))
     }
 }

@@ -18,6 +18,8 @@
             <option value="$PROJECT_DIR$/feature" />
             <option value="$PROJECT_DIR$/feature/home-api" />
             <option value="$PROJECT_DIR$/feature/home-impl" />
+            <option value="$PROJECT_DIR$/feature/onboarding-api" />
+            <option value="$PROJECT_DIR$/feature/onboarding-impl" />
             <option value="$PROJECT_DIR$/feature/settings-api" />
             <option value="$PROJECT_DIR$/feature/settings-impl" />
           </set>

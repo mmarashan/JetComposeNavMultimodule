@@ -21,7 +21,6 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
 
     implementation project(':feature:home-api')
-    implementation project(':feature:home-impl')
     implementation project(':feature:settings-api')
-    implementation project(':feature:settings-impl')
+    implementation project(':feature:onboarding-api')
 }

@@ -4,9 +4,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
-import com.example.core.dependencyprovider.DependencyProvider
-import com.example.feature.home.api.HomeFeatureApi
-import com.example.feature.onboarding.api.OnboardingFeatureApi
+import com.example.api.onboarding.OnboardingFeatureApi
 
 class OnboardingFeatureImpl : OnboardingFeatureApi {
 

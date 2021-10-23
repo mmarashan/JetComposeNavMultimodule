@@ -38,5 +38,7 @@ dependencies {
     implementation project(":core:feature-api")
     implementation project(":core:dependencyprovider")
 
-    implementation project(":feature:home")
+    implementation project(":feature:onboarding-api")
+    implementation project(":feature:home-api")
+    implementation project(":feature:settings-api")
 }

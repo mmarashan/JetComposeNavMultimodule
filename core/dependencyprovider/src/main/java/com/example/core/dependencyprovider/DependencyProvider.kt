@@ -1,9 +1,8 @@
 package com.example.core.dependencyprovider
 
+import com.example.api.onboarding.OnboardingFeatureApi
 import com.example.feature.api.home.HomeFeatureApi
-import com.example.feature.home.impl.HomeFeatureImpl
 import com.example.feature.api.settings.SettingsFeatureApi
-import com.example.feature.settings.impl.SettingsFeatureImpl
 
 /**
  * WARNING!!! Don't use it in real project! Use real DI libraries: Dagger, Hilt, Koin..
@@ -11,7 +10,24 @@ import com.example.feature.settings.impl.SettingsFeatureImpl
  */
 object DependencyProvider {
 
-    fun homeFeature():  HomeFeatureApi = HomeFeatureImpl()
+    /* Don't use lateinit in real project :) */
+    private lateinit var homeFeatureApi: HomeFeatureApi
+    private lateinit var settingsFeatureApi: SettingsFeatureApi
+    private lateinit var onboardingFeatureApi: OnboardingFeatureApi
 
-    fun settingsFeature(): SettingsFeatureApi = SettingsFeatureImpl()
+    fun provideImpl(
+        homeFeatureApi: HomeFeatureApi,
+        settingsFeatureApi: SettingsFeatureApi,
+        onboardingFeatureApi: OnboardingFeatureApi
+    ) {
+        this.homeFeatureApi = homeFeatureApi
+        this.settingsFeatureApi = settingsFeatureApi
+        this.onboardingFeatureApi = onboardingFeatureApi
+    }
+
+    fun homeFeature(): HomeFeatureApi = homeFeatureApi
+
+    fun settingsFeature(): SettingsFeatureApi = settingsFeatureApi
+
+    fun onboardingFeature(): OnboardingFeatureApi = onboardingFeatureApi
 }

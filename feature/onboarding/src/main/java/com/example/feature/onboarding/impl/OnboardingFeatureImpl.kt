@@ -1,12 +1,12 @@
 package com.example.feature.onboarding.impl
 
-import android.util.Log
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
+import com.example.core.dependencyprovider.DependencyProvider
+import com.example.feature.home.api.HomeFeatureApi
 import com.example.feature.onboarding.api.OnboardingFeatureApi
-import java.lang.Exception
 
 class OnboardingFeatureImpl : OnboardingFeatureApi {
 
@@ -20,9 +20,7 @@ class OnboardingFeatureImpl : OnboardingFeatureApi {
         modifier: Modifier
     ) {
         navGraphBuilder.composable(route) {
-            OnboardingScreen {
-                navController.navigate("home")
-            }
+            OnboardingScreen(navController)
         }
     }
 }

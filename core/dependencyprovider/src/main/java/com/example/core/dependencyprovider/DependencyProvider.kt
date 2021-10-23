@@ -13,9 +13,24 @@ import com.example.feature.settings.impl.SettingsFeatureImpl
  */
 object DependencyProvider {
 
-    fun homeFeature(): HomeFeatureApi = HomeFeatureImpl()
+    /* Don't use lateinit in real project :) */
+    private lateinit var homeImpl: HomeFeatureApi
+    private lateinit var settingsImpl: SettingsFeatureApi
+    private lateinit var onboardingImpl: OnboardingFeatureApi
 
-    fun settingsFeature(): SettingsFeatureApi = SettingsFeatureImpl()
+    fun provideDependencies(
+        homeImpl: HomeFeatureApi,
+        settingsImpl: SettingsFeatureApi,
+        onboardingImpl: OnboardingFeatureApi
+    ) {
+        this.homeImpl = homeImpl
+        this.settingsImpl = settingsImpl
+        this.onboardingImpl = onboardingImpl
+    }
 
-    fun onboardingFeature(): OnboardingFeatureApi = OnboardingFeatureImpl()
+    fun homeFeature(): HomeFeatureApi = homeImpl
+
+    fun settingsFeature(): SettingsFeatureApi = settingsImpl
+
+    fun onboardingFeature(): OnboardingFeatureApi = onboardingImpl
 }

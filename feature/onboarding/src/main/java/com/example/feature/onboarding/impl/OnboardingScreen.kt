@@ -10,16 +10,22 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
+import com.example.core.dependencyprovider.DependencyProvider
 
 @Composable
-fun OnboardingScreen(onClickButton: () -> Unit) {
+fun OnboardingScreen(navController: NavHostController) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text("Hello world!", modifier = Modifier.padding(36.dp))
-        Button(onClick = onClickButton) {
+        Button(onClick = {
+            val homeFeature = DependencyProvider.homeFeature()
+            navController.popBackStack()
+            navController.navigate(homeFeature.homeRoute())
+        }) {
             Text("Next")
         }
     }

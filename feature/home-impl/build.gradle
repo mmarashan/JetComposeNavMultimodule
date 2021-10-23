@@ -37,4 +37,5 @@ dependencies {
 
     implementation project(":core:feature-api")
     implementation project(":feature:home-api")
+    implementation project(":core:dependencyprovider")
 }

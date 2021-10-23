@@ -6,5 +6,5 @@ interface HomeFeatureApi: FeatureApi {
 
     fun homeRoute(): String
 
-    fun homeDetails(parameter: String = "null"): String
+    fun homeDetails(parameter: String): String
 }

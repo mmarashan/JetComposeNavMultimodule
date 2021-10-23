@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.example.core.dependencyprovider.DependencyProvider
 
 @Composable
 fun HomeScreen(modifier: Modifier, navController: NavHostController) {
@@ -24,7 +25,8 @@ fun HomeScreen(modifier: Modifier, navController: NavHostController) {
         Button(
             modifier = Modifier.padding(16.dp),
             onClick = {
-                navController.navigate("home/abc")
+                val homeFeature = DependencyProvider.homeFeature()
+                navController.navigate(homeFeature.homeDetails(parameter = "abc"))
             }) {
             Text("To details screen")
         }

@@ -1,8 +1,8 @@
 package com.example.core.dependencyprovider
 
-import com.example.feature.home.api.HomeFeatureApi
+import com.example.feature.api.home.HomeFeatureApi
 import com.example.feature.home.impl.HomeFeatureImpl
-import com.example.feature.settings.api.SettingsFeatureApi
+import com.example.feature.api.settings.SettingsFeatureApi
 import com.example.feature.settings.impl.SettingsFeatureImpl
 
 /**
@@ -11,7 +11,7 @@ import com.example.feature.settings.impl.SettingsFeatureImpl
  */
 object DependencyProvider {
 
-    fun homeFeature(): HomeFeatureApi = HomeFeatureImpl()
+    fun homeFeature():  HomeFeatureApi = HomeFeatureImpl()
 
     fun settingsFeature(): SettingsFeatureApi = SettingsFeatureImpl()
 }

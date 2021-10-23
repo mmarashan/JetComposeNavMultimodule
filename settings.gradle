@@ -12,5 +12,7 @@ include ':app',
         ':core:dependencyprovider',
 
         ':feature',
-        ':feature:home',
-        ':feature:settings'
+        ':feature:home-api',
+        ':feature:home-impl',
+        ':feature:settings-api',
+        ':feature:settings-impl'

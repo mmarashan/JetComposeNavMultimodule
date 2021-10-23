@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_23_10_2021,_17_36_[Default_Changelist]" date="1634996179348" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2021,_17_36_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 23.10.2021, 17:36 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="core/dependencyprovider/build/kotlin/compileDebugKotlin/build-history.bin" />
+    <option name="AFTER_PATH" value="core/dependencyprovider/build/kotlin/compileDebugKotlin/build-history.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2021,_17_36_[Default_Changelist]/build-history.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="core/dependencyprovider/build/kotlin/compileDebugKotlin/last-build.bin" />
+    <option name="AFTER_PATH" value="core/dependencyprovider/build/kotlin/compileDebugKotlin/last-build.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_10_2021,_17_36_[Default_Changelist]/last-build.bin" />
+  </binary>
+</changelist>

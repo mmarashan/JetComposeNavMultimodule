@@ -3,7 +3,9 @@ package com.example.feature.home.impl
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.composable
+import androidx.navigation.navArgument
 import com.example.feature.api.home.HomeFeatureApi
 
 class HomeFeatureImpl : HomeFeatureApi {
@@ -25,10 +27,14 @@ class HomeFeatureImpl : HomeFeatureApi {
             HomeScreen(modifier = modifier, navController = navController)
         }
 
-        navGraphBuilder.composable("$baseDetailsRoute/{$parameterKey}") { backStackEntry ->
+        navGraphBuilder.composable(
+            route = "$baseDetailsRoute/{$parameterKey}",
+            arguments = listOf(navArgument(parameterKey) { type = NavType.StringType })
+        ) { backStackEntry ->
             val arguments = requireNotNull(backStackEntry.arguments)
             val parameter = arguments.getString(parameterKey)
             HomeDetailsScreen(modifier = modifier, parameter = parameter.orEmpty())
+
         }
     }
 }

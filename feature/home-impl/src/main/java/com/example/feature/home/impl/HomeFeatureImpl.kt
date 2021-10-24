@@ -3,16 +3,22 @@ package com.example.feature.home.impl
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.composable
+import androidx.navigation.navArgument
+import androidx.navigation.navigation
 import com.example.feature.api.home.HomeFeatureApi
 
 class HomeFeatureImpl : HomeFeatureApi {
 
     private val parameterKey = "parameterKey"
     private val baseDetailsRoute = "homeDetails"
+
+    /**/
+    private val baseHomeMainRoute = "homeMain"
     private val baseRoute = "home"
 
-    override fun homeRoute() = baseRoute
+    override fun homeRoute() = baseHomeMainRoute
 
     override fun homeDetails(parameter: String) = "$baseDetailsRoute/${parameter}"
 
@@ -21,14 +27,20 @@ class HomeFeatureImpl : HomeFeatureApi {
         navController: NavHostController,
         modifier: Modifier
     ) {
-        navGraphBuilder.composable(baseRoute) {
-            HomeScreen(modifier = modifier, navController = navController)
-        }
+        navGraphBuilder.navigation(route = baseRoute, startDestination = baseHomeMainRoute) {
 
-        navGraphBuilder.composable("$baseDetailsRoute/{$parameterKey}") { backStackEntry ->
-            val arguments = requireNotNull(backStackEntry.arguments)
-            val parameter = arguments.getString(parameterKey)
-            HomeDetailsScreen(modifier = modifier, parameter = parameter.orEmpty())
+            composable(baseHomeMainRoute) {
+                HomeScreen(modifier = modifier, navController = navController)
+            }
+
+            composable(
+                route = "$baseDetailsRoute/{$parameterKey}",
+                arguments = listOf(navArgument(parameterKey) { type = NavType.StringType })
+            ) { backStackEntry ->
+                val arguments = requireNotNull(backStackEntry.arguments)
+                val parameter = arguments.getString(parameterKey)
+                HomeDetailsScreen(modifier = modifier, parameter = parameter.orEmpty())
+            }
         }
     }
 }

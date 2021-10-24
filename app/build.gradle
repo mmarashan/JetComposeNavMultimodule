@@ -60,4 +60,12 @@ dependencies {
     implementation "com.google.accompanist:accompanist-insets:0.18.0"
 
     implementation project(":core:feature-api")
+    implementation project(":core:dependencyprovider")
+
+    implementation project(':feature:home-api')
+    implementation project(':feature:home-impl')
+    implementation project(":feature:settings-api")
+    implementation project(':feature:settings-impl')
+    implementation project(":feature:onboarding-api")
+    implementation project(':feature:onboarding-impl')
 }

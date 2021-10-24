@@ -1,0 +1,17 @@
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"testRunner\" value=\"GRADLE\" />\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n            <option value=\"$PROJECT_DIR$/app\" />\n            <option value=\"$PROJECT_DIR$/core\" />\n            <option value=\"$PROJECT_DIR$/core/dependencyprovider\" />\n            <option value=\"$PROJECT_DIR$/core/feature-api\" />\n            <option value=\"$PROJECT_DIR$/feature\" />\n            <option value=\"$PROJECT_DIR$/feature/home-api\" />\n            <option value=\"$PROJECT_DIR$/feature/home-impl\" />\n            <option value=\"$PROJECT_DIR$/feature/onboarding-api\" />\n            <option value=\"$PROJECT_DIR$/feature/onboarding-impl\" />\n            <option value=\"$PROJECT_DIR$/feature/settings-api\" />\n            <option value=\"$PROJECT_DIR$/feature/settings-impl\" />\n          </set>\n        </option>\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 991aa7c100ca7fa2f37bb6dcc8c824d3d406eb99)
++++ b/.idea/gradle.xml	(date 1635062623353)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>

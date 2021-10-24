@@ -1,0 +1,2 @@
+com/example/feature/oboarding/BuildConfig.java
+ com.example.feature.oboarding.BuildConfig

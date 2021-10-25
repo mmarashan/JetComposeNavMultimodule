@@ -24,24 +24,26 @@ internal fun OnboardingScreen(navController: NavHostController) {
             text = "Hello world! You're in onboarding screen",
             modifier = Modifier.padding(36.dp)
         )
-        Button(
-            modifier = Modifier.padding(16.dp),
-            onClick = {
-                val homeFeature = DependencyProvider.homeFeature()
-                navController.popBackStack()
-                navController.navigate(homeFeature.homeRoute())
-            }) {
-            Text("To home")
+        SimpleButton(text = "To home") {
+            val homeFeature = DependencyProvider.homeFeature()
+            navController.popBackStack()
+            navController.navigate(homeFeature.homeRoute())
         }
 
-        Button(
-            modifier = Modifier.padding(16.dp),
-            onClick = {
-                val settingsFeature = DependencyProvider.settingsFeature()
-                navController.popBackStack()
-                navController.navigate(settingsFeature.settingsRoute())
-            }) {
-            Text("To settings")
+        SimpleButton(text = "To settings") {
+            val settingsFeature = DependencyProvider.settingsFeature()
+            navController.popBackStack()
+            navController.navigate(settingsFeature.settingsRoute())
         }
+    }
+}
+
+@Composable
+private fun SimpleButton(text: String, onClick: () -> Unit) {
+    Button(
+        modifier = Modifier.padding(16.dp),
+        onClick = onClick
+    ) {
+        Text(text)
     }
 }

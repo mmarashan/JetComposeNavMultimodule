@@ -4,7 +4,9 @@
 наследоваться от него. API фичей дополняются методами, возвращающими routes (
 composable - экранов с учетом параметров навигации. Функция registerGraph(...) регистрирует граф
 навигации фичи либо как отдельные экраны через navGraphBuilder.composable(...), либо как вложенный
-граф через navGraphBuilder.navigation(..).
+граф через navGraphBuilder.navigation(..). NavGraphBuilder служит для связывания route c экранами
+фичи. navController нужен для навигации; modifier - модификатор с проставленными paddings от Bottom
+Nav Bar.
 
 ```
 interface FeatureApi {

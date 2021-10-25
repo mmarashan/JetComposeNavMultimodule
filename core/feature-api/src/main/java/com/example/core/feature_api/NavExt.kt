@@ -9,5 +9,9 @@ fun NavGraphBuilder.register(
     navController: NavHostController,
     modifier: Modifier = Modifier
 ) {
-    featureApi.registerGraph(navGraphBuilder = this, navController = navController)
+    featureApi.registerGraph(
+        navGraphBuilder = this,
+        navController = navController,
+        modifier = modifier
+    )
 }

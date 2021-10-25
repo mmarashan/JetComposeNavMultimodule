@@ -8,18 +8,18 @@ Compose. Как и всегда, вначале возник вопрос выб
 
 После изучения документации, примеров с compose от
 Google (https://github.com/android/compose-samples) и поиска решений в интернете было принято
-решение использовать Jetpack Compose for
+решение использовать Jetpack Navigation for
 Compose (https://developer.android.com/jetpack/compose/navigation). Во-первых развивается Google;
 во-вторых, это достаточно гибкий инструмент, который удовлетворяет современным потребностям - работа
 с backstack (в том числе multi-backstack), простая инетграция с Bottom Nav Bar, анимации перехода
-и.т.д.; в-третьих, имеет много общего с Jetpack Compose for Fragments;
+и.т.д.; в-третьих, имеет много общего с Jetpack Navigation for Fragments;
 
 Рассмотрим основные сущности этой библиотеки. Здесь будет пересказ документации, так что тем, кто
 уже имеет опыт с этим инструментом, можно переходить к сделующему шагу.
 
 Destination - экран (composable-функция), на который происходит навигация с помощью route.
 
-Route - строка - deeplink до destination. В отличии с Jetpack Compose for Fragments навигация
+Route - строка - deeplink до destination. В отличии с Jetpack Navigation for Fragments навигация
 происходит только через deeplink. Передаваемые параметры прописываются в этой-же строке по аналогии
 с web. Пример рассмотрим далее.
 

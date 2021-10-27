@@ -1,7 +1,7 @@
 ## Шаг 2. Первая версия. Bottom Nav Bar.
 
 Рассмотрим код, в котором создается Scaffold (Material design layout), в котором мы объявляем
-BottomBar, composable-функцию с отрисовкой Bottom Nav Bar, и AppNavGraph, composable-функцию с
+BottomBar - composable-функцию с отрисовкой Bottom Nav Bar; и AppNavGraph - composable-функцию с
 отрисовкой экранов из графа навигации.
 
 ```
@@ -25,10 +25,9 @@ fun AppContent() {
 }
 ```
 
-В целом, тут все так же как в примерах Google, ничего нового выдумывать не было потребности.
-Рассмотрим все по отдельности, чтобы было понятнее. BottomTabs - это enum class с контентом для
-Bottom Nav Bar. Обращаем внимание на параметр route - через него произойдет связь таба с
-composable-экраном:
+В целом, тут все так же как в примерах Google, для примера ничего нового добавлять не пришлось.
+Рассмотрим все по отдельности. BottomTabs - это enum class с контентом для Bottom Nav Bar. Обращаем
+внимание на параметр route - через него произойдет связь таба с composable-экраном:
 
 ```
 enum class BottomTabs(
@@ -38,14 +37,13 @@ enum class BottomTabs(
     val icon: Int,
     val route: String
 ) {
-
     HOME(R.string.home, R.drawable.ic_baseline_home, "home"),
     SETTINGS(R.string.settings, R.drawable.ic_baseline_settings, "settings")
 }
 ```
 
 Рассмотрим BottomBar. Наиболее интересная первая строка - благодаря ней происходит рекомпозиция при
-изменении в BackStack. Далее - отрисовка BottomNavigation только если текущий destination связан с
+изменении в back stack. Далее - отрисовка BottomNavigation только если текущий destination связан с
 route, который описан в BottomTabs.
 
 ```
@@ -88,7 +86,7 @@ fun BottomBar(navController: NavController, tabs: Array<BottomTabs>) {
 ```
 
 Теперь основной код, связанный с навигацией - объявление NavHost. Ему для инициализации нужен
-navController, который передаем сверху и startDestination. Здесь к route "home" и "settings"
+navController, который передаем сверху, и startDestination. Здесь к route "home" и "settings"
 соотносят composable-функции, которые будут вызываться при навигации.
 
 ```
@@ -118,7 +116,5 @@ fun AppNavGraph(
 ```
 
 На этом шаге максимально примитивно. Но что там с многомодульностью? Не будем же мы бесконечно
-прописывать каждый новый экран в один файл, раздувая его до бесконечности. Здесь документация
-подсказывает, что нужно использовать возможность создавать nested graph через navigation(
-startDestination = ..., route = ...). Также нам поможет унифицированный подход добавление фичи,
-который мы рассмотрим на следующем шаге.
+прописывать каждый новый экран в один файл, раздувая его до бесконечности. Нам поможет
+унифицированный подход добавление фичи, который мы рассмотрим на следующем шаге.

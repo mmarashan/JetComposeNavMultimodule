@@ -1,7 +1,7 @@
 ## Шаг 4. Навигация внутри фичи
 
-Для того, чтобы рассказ был завершенным, рассмотрим пример навигации из фичи в фичу. Для примера
-рассмотрим фичу onboarding, которая позволяет перейти в фичи home или settings.
+Теперь рассмотрим пример навигации из фичи в фичу. Для примера рассмотрим фичу onboarding, которая
+позволяет перейти в фичи home или settings.
 
 ```
 class OnboardingFeatureImpl : OnboardingFeatureApi {
@@ -58,5 +58,5 @@ private fun SimpleButton(text: String, onClick: () -> Unit) {
 
 Здесь OnboardingScreen - это экран фичи, который открывается по route = "onboarding". На экране
 текст и 2 кнопки с похожими обработчиками нажатий. В них с помощью navController текущий экран
-удаляется из BackStack и через псевдо-DI DependencyProvider достается api нужной фичи, из которой
+удаляется из back stack и через псевдо-DI DependencyProvider достается Api нужной фичи, из которой
 достаем route до ее экрана.

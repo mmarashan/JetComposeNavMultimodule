@@ -32,8 +32,8 @@ class HomeFeatureImpl : HomeFeatureApi {
             arguments = listOf(navArgument(parameterKey) { type = NavType.StringType })
         ) { backStackEntry ->
             val arguments = requireNotNull(backStackEntry.arguments)
-            val parameter = arguments.getString(parameterKey)
-            HomeDetailsScreen(modifier = modifier, parameter = parameter.orEmpty())
+            val argument = arguments.getString(parameterKey)
+            HomeDetailsScreen(modifier = modifier, argument = argument.orEmpty())
 
         }
     }

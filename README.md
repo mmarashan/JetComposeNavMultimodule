@@ -1,4 +1,4 @@
-**Jetpack Compose + Jetpack Navigation в многомодульном проекте**
+**Jetpack Compose Navigation в многомодульном проекте**
 
 - [Шаг 0. Введение](pages/step_0.md)
 - [Шаг 1. Создание проекта](pages/step_1.md)

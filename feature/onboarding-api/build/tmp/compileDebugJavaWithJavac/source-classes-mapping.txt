@@ -1,2 +1,0 @@
-com/example/api/onboarding/BuildConfig.java
- com.example.api.onboarding.BuildConfig

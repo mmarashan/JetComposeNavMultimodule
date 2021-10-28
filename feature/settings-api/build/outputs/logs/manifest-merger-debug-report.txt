@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml:2:1-56
+INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml:2:1-56
+INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml:2:1-56
+	package
+		ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml:2:11-53
+		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml:2:1-56
+uses-sdk
+INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+		ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+		ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml
+		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/feature/settings-api/src/main/AndroidManifest.xml

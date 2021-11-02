@@ -12,14 +12,14 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun HomeDetailsScreen(modifier: Modifier, argument: String) {
+fun ScreenB(modifier: Modifier, argument: String) {
     Column(
         modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
         Text(
-            "Home details",
+            "Screen B",
             modifier = Modifier.padding(36.dp),
             fontSize = 24.sp
         )

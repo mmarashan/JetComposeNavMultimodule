@@ -1,3 +1,3 @@
 **Jetpack Compose Navigation в многомодульном проекте**
 
-- [Полный текст](pages/article.md)
+- [Полный текст](https://habr.com/ru/post/586192/)

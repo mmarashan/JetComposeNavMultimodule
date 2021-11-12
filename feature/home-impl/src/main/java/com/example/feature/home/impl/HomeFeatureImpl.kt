@@ -7,6 +7,9 @@ import androidx.navigation.compose.composable
 import com.example.feature.api.home.HomeFeatureApi
 import com.example.feature.home.impl.internal.InternalHomeFeatureApi
 
+/**
+ * Реализация API фичи home
+ */
 class HomeFeatureImpl : HomeFeatureApi {
 
     private val baseRoute = "home"

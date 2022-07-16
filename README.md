@@ -1,3 +1,3 @@
-**Jetpack Compose Navigation в многомодульном проекте**
+**Jetpack Compose Navigation in a multi-module project**
 
-- [Полный текст](https://habr.com/ru/post/586192/)
+- [Post text on habr.com](https://habr.com/ru/post/586192/)

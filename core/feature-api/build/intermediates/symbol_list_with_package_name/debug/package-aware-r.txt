@@ -22,17 +22,14 @@ attr graph
 attr launchSingleTop
 attr mimeType
 attr navGraph
-attr nestedScrollViewStyle
 attr nullable
 attr popEnterAnim
 attr popExitAnim
 attr popUpTo
 attr popUpToInclusive
 attr popUpToSaveState
-attr queryPatterns
 attr restoreState
 attr route
-attr shortcutMatchRequired
 attr startDestination
 attr targetPackage
 attr ttcIndex
@@ -41,6 +38,8 @@ color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
 color notification_action_color_filter
 color notification_icon_bg_color
+color ripple_material_light
+color secondary_text_default_material_light
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
@@ -186,7 +185,6 @@ style TextAppearance_Compat_Notification_Title
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 styleable ActivityNavigator action android_name data dataPattern targetPackage
-styleable Capability queryPatterns shortcutMatchRequired
 styleable ColorStateListItem alpha android_alpha android_color
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
 styleable FontFamilyFont android_font android_fontStyle android_fontVariationSettings android_fontWeight android_ttcIndex font fontStyle fontVariationSettings fontWeight ttcIndex

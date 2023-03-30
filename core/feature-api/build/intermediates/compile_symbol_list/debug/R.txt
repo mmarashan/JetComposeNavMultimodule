@@ -21,17 +21,14 @@ int attr graph 0x0
 int attr launchSingleTop 0x0
 int attr mimeType 0x0
 int attr navGraph 0x0
-int attr nestedScrollViewStyle 0x0
 int attr nullable 0x0
 int attr popEnterAnim 0x0
 int attr popExitAnim 0x0
 int attr popUpTo 0x0
 int attr popUpToInclusive 0x0
 int attr popUpToSaveState 0x0
-int attr queryPatterns 0x0
 int attr restoreState 0x0
 int attr route 0x0
-int attr shortcutMatchRequired 0x0
 int attr startDestination 0x0
 int attr targetPackage 0x0
 int attr ttcIndex 0x0
@@ -40,6 +37,8 @@ int color androidx_core_ripple_material_light 0x0
 int color androidx_core_secondary_text_default_material_light 0x0
 int color notification_action_color_filter 0x0
 int color notification_icon_bg_color 0x0
+int color ripple_material_light 0x0
+int color secondary_text_default_material_light 0x0
 int dimen compat_button_inset_horizontal_material 0x0
 int dimen compat_button_inset_vertical_material 0x0
 int dimen compat_button_padding_horizontal_material 0x0
@@ -190,9 +189,6 @@ int styleable ActivityNavigator_android_name 1
 int styleable ActivityNavigator_data 2
 int styleable ActivityNavigator_dataPattern 3
 int styleable ActivityNavigator_targetPackage 4
-int[] styleable Capability { 0x0, 0x0 }
-int styleable Capability_queryPatterns 0
-int styleable Capability_shortcutMatchRequired 1
 int[] styleable ColorStateListItem { 0x0, 0x101031f, 0x10101a5 }
 int styleable ColorStateListItem_alpha 0
 int styleable ColorStateListItem_android_alpha 1

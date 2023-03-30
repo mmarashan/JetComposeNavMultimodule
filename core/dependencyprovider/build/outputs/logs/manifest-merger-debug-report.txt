@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:1-59
-INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:1-59
-INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:1-59
+ADDED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:1-59
+INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:1-59
+INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:1-59
 	package
-		ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:11-56
-		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
-		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+		ADDED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:11-56
+		INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+		INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:1-59
+		ADDED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml:2:1-59
 uses-sdk
-INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
-INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
-INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
-INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
-		ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
-		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+		INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+		ADDED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+		INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
-		ADDED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
-		INJECTED from /Users/MoexUser/AndroidStudioProjects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+		INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+		ADDED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml
+		INJECTED from /Users/mrmx/Projects/JetComposeNavMultimodule/core/dependencyprovider/src/main/AndroidManifest.xml

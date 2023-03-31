@@ -1,4 +1,4 @@
-package com.example.jetcomposenavmultimodule.main
+package com.example.jetcomposenavmultimodule.main.presentation
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.BottomNavigation
@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.jetcomposenavmultimodule.main.navigation.AppNavGraph
 import com.example.jetcomposenavmultimodule.ui.theme.JetComposeNavMultimoduleTheme
 import com.example.jetcomposenavmultimodule.ui.theme.backgroundWhite
 import com.google.accompanist.insets.ProvideWindowInsets

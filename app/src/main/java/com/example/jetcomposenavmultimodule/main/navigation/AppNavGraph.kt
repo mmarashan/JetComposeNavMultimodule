@@ -1,4 +1,4 @@
-package com.example.jetcomposenavmultimodule.main
+package com.example.jetcomposenavmultimodule.main.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -15,7 +15,7 @@ fun AppNavGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = DependencyProvider.onboardingFeature().route()
+        startDestination = DependencyProvider.onboardingFeature().route
     ) {
         register(
             DependencyProvider.homeFeature(),

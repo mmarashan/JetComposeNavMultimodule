@@ -2,7 +2,6 @@ package com.example.feature.onboarding.impl
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Button
 import androidx.compose.material.Text
@@ -12,13 +11,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
-import com.example.core.dependencyprovider.DependencyProvider
 
 @Composable
-internal fun OnboardingScreen(navController: NavHostController) {
+internal fun OnboardingScreen(
+    modifier: Modifier,
+    onNavigateToHome: () -> Unit,
+    onNavigateToSettings: () -> Unit
+) {
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = modifier,
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -28,24 +29,26 @@ internal fun OnboardingScreen(navController: NavHostController) {
             modifier = Modifier.padding(36.dp),
             fontSize = 24.sp
         )
-        SimpleButton(text = "To home") {
-            val homeFeature = DependencyProvider.homeFeature()
-            navController.popBackStack()
-            navController.navigate(homeFeature.homeRoute())
-        }
+        SimpleButton(
+            text = "To home",
+            onClick = onNavigateToHome
+        )
 
-        SimpleButton(text = "To settings") {
-            val settingsFeature = DependencyProvider.settingsFeature()
-            navController.popBackStack()
-            navController.navigate(settingsFeature.settingsRoute())
-        }
+        SimpleButton(
+            text = "To settings",
+            onClick = onNavigateToSettings
+        )
     }
 }
 
 @Composable
-private fun SimpleButton(text: String, onClick: () -> Unit) {
+private fun SimpleButton(
+    modifier: Modifier = Modifier,
+    text: String,
+    onClick: () -> Unit
+) {
     Button(
-        modifier = Modifier.padding(16.dp),
+        modifier = modifier.padding(16.dp),
         onClick = onClick
     ) {
         Text(text)

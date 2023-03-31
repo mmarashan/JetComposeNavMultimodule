@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JetComposeNavMultimodule">
         <activity
-            android:name=".main.MainActivity"
+            android:name=".main.presentation.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.JetComposeNavMultimodule.NoActionBar">

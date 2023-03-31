@@ -7,20 +7,21 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Button
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Text
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
-import com.example.feature.home.impl.internal.InternalHomeFeatureApi
 
 @Composable
-fun ScreenA(modifier: Modifier, navController: NavHostController) {
+internal fun ScreenA(
+    modifier: Modifier,
+    onNavigateNextWithArgument: (String) -> Unit
+) {
     var text by remember { mutableStateOf("") }
 
     Column(
@@ -43,8 +44,9 @@ fun ScreenA(modifier: Modifier, navController: NavHostController) {
         Button(
             modifier = Modifier.padding(16.dp),
             onClick = {
-                navController.navigate(InternalHomeFeatureApi.screenB(parameter = text))
-            }) {
+                onNavigateNextWithArgument(text)
+            }
+        ) {
             Text("To screen B")
         }
     }

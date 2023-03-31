@@ -4,5 +4,5 @@ import com.example.core.feature_api.FeatureApi
 
 interface SettingsFeatureApi: FeatureApi {
 
-    fun settingsRoute(): String
+    val settingsRoute: String
 }
